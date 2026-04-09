@@ -59,7 +59,7 @@ def parse_vars(templateText, dictionary):
 	filledTemplate = templateText
 	
 	for (pattern, value) in dictionary.items():
-		filledTemplate = re.sub(pattern, value, filledTemplate, 0, re.UNICODE)
+		filledTemplate = filledTemplate.replace(pattern, value)
 	
 	return filledTemplate
 
