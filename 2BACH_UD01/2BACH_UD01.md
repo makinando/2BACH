@@ -1,5 +1,10 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\) Rose']]} });
+</script>
+
 !!! portada "ENSAYO DE MATERIALES"
-	Manual para tutores
+	Tecnología e Ingeniería 2 BACH
 
 Tabla de contenidos
 {: .toc}
@@ -8,295 +13,96 @@ Tabla de contenidos
 
 
 
-# Acceso al consejo orientador (2)
+# 1 Ensayo de tracción
 
-Se ha habilitado en Séneca la cumplimentación del **Consejo Orientador** por los tutores que deben entregarse a las familias con las notas a fin de curso. Para ello debe cumplimentarse lo siguiente, que es **obligatorio**, pero muy rápido.
+Este ensayo mecánico consiste en someter a una probeta de forma y dimensiones normalizadas a un sistema de fuerzas exteriores (esfuerzo de tracción) en la dirección de su eje longitudinal hasta romperla.
 
-## Cumplimentación del informe
+## 1.1 Deformaciones elásticas y plásticas
 
-Entrar en Séneca y acceder a `Alumnado` > `Informes` > `Consejo Orientador`.
+Cuando sometemos un material a una tensión, se deforma. Si al cesar la fuerza el material recupera sus dimensiones primitivas, se dice que ha experimentado una deformación elástica.
 
-![](img/shot01.png)
-{.center}
+Si el material se deforma hasta el extremo de no poder recuperar por completo sus medidas originales, se dice que ha experimentado una deformación plástica.
 
-Seguidamente, comprobar **Año académico**, seleccionar **Tipo de informe: Informe Consejo Orientador ESO** y elegir **curso** y **unidad**.
+## 1.2 Tensión y deformación
+Consideremos una varilla cilíndrica de longitud $L_0$ y una sección $A_0$, sometida a una tensión $F$ de tracción.
 
-![](img/shot02.png)
-{.center}
+Definiremos **tensión ($\sigma$)** como el cociente entre la fuerza de tracción $F$ y la sección transversal $A_0$ de la varilla:
+$$\sigma = \frac{F}{A_0}$$
 
-Una vez nos aparezca la lista de alumnos, iremos cumplimentando los informes uno por uno.
+La unidad de tensión en el Sistema Internacional es el pascal: $1 \text{ Pa} = 1 \text{ N/m}^2$.
 
-![](img/shot03.png)
-{.center}
+Cuando se aplica a una varilla una fuerza de tracción, se provoca un alargamiento o elongación de esta en la dirección de la fuerza. Este desplazamiento se llama deformación.
 
-## Entrega a las familias
+## 1.3 Análisis de un diagrama de tracción
+Los resultados obtenidos en la realización de un ensayo de tracción se representan en una gráfica de tal manera que obtenemos una curva que relaciona las tensiones con las deformaciones relativas a la longitud inicial, llamadas alargamientos unitarios.
 
-Al rellenarlo, Séneca debería incluirlo automáticamente el **Punto de Recogida Electrónico**. Los tutores que necesiten entregarlo en mano, lo pueden **imprimir** a través de la siguiente ruta: `Documentos` > `Alumnado` > `Evaluación` > `Documentos oficiales de Evaluación` > `Documentos oficiales de la ESO` > `Consejo Orientador`.
+![Diagrama de tracción](./imagenes/image28.png)
 
-Se pueden firmar digitalmente o a mano y se reparte a los padres sellado junto con el boletín de notas.
+Al estudiar este diagrama, podemos distinguir dos zonas fundamentales:
 
-![](img/shot08.png)
-{.center}
+*   **Zona elástica (OE).** Se caracteriza por que al cesar las tensiones aplicadas, los materiales recuperan su longitud original $l_0$.
+    *   **Zona de proporcionalidad (OP).** Se trata de una recta, por lo que existe una proporcionalidad entre las tensiones aplicadas y los alargamientos unitarios. Es la zona donde deben trabajar los materiales. Matemáticamente se cumple la Ley de Hooke.
+    *   **Zona no proporcional (PE).** El material se comporta de forma elástica, pero las deformaciones y tensiones no están relacionadas linealmente. No es una zona aconsejable para trabajar los materiales.
+*   **Zona plástica (ES).** Se ha rebasado la tensión del límite elástico $\sigma_E$ de forma que, aunque dejemos de aplicar tensiones de tracción, el material ya no recupera su longitud original. El material ha sufrido deformaciones permanentes.
+    *   **Zona límite de rotura (ER).** Zona de comportamiento muy similar a la anterior, donde a pequeñas variaciones de tensión se producen grandes alargamientos. El límite es el punto R (**límite de rotura**).
+    *   **Zona de rotura (RS).** Superado el punto R, el material sigue alargándose progresivamente hasta que se produce la rotura física total en el punto S.
 
+**Fenómeno de fluencia:** En algunos materiales como el acero, existe una zona por encima del límite elástico donde se produce un alargamiento muy rápido sin que varíe la tensión aplicada. El punto donde comienza se llama **límite de fluencia (F)**.
 
+## 1.4 Ley de Hooke
+Las tensiones aplicadas sobre un elemento resistente son directamente proporcionales a las deformaciones producidas, dentro del comportamiento elástico de los materiales.
+$$\sigma = E \cdot \varepsilon$$
 
-# Consejo orientador en 1º de ESO
+En esta representación, el valor de la pendiente se conoce como **módulo elástico o módulo de Young (E)**. Representa la rigidez del material. Se mide en $\text{kp/cm}^2$, $\text{kp/mm}^2$ o $\text{N/m}^2$ (Pascales).
 
-## Medidas complementarias
+# 2. Ensayos de dureza
+La dureza es la resistencia que ofrece un material a ser rayado o penetrado por otro. La propiedad mecánica que se determina es la **cohesión**. Los ensayos de penetración se basan en forzar un penetrador sobre la superficie y medir la huella resultante.
 
-Se rellenan **todos** los alumnos y se eligen las que procedan (puede quedarse en blanco para algunos alumnos).
+## 2.1 Ensayo Brinell
+Consiste en comprimir una bola de acero templado de diámetro $D$ contra el material mediante una carga $F$.
 
-![](img/shot04.png)
-{.center style="width: 60%"}
+![Esquema del Ensayo Brinell](imagenes/image11.png)
 
-## Recomendaciones sobre el itinerario a seguir
+La dureza Brinell ($HB$) se calcula como:
+$$HB = \frac{F}{S}$$
+Donde $S$ es el área del casquete de la huella. Operando con el diámetro de la huella ($d$), la fórmula final es:
+$$HB = \frac{2F}{\pi D (D - \sqrt{D^2 - d^2})}$$
 
-En **observaciones**, elegir entre:
+*   **Condiciones:** Se usa para materiales gruesos (> 6 mm). Las cargas deben ser proporcionales al diámetro: $F = K \cdot D^2$. La constante $K$ depende del material.
 
-- Promociona a 2º de E.S.O.
-- Promociona a 2º de E.S.O. en P.M.A.R
-- Permanece un año más en 1º de no superar en la convocatoria de septiembre las materias pendientes.
+## 2.2 Ensayo Vickers
+El penetrador es una **pirámide regular de base cuadrada** con un ángulo entre caras de 136°.
 
-![](img/shot05.png)
-{.center style="width: 60%"}
+![Esquema del Ensayo Vickers](imagenes/image17.png)
 
-## Logro de objetivos
+Se usa para materiales muy duros (superiores a 500 HB) o espesores muy pequeños (hasta 0,05 mm).
+$$HV = \frac{1,8544 \cdot F}{d^2}$$
+Donde $d$ es la diagonal de la huella en mm.
 
-Seleccionar una de las tres opciones:
+## 2.3 Ensayo Rockwell
+A diferencia de los anteriores, mide la **profundidad de la huella ($e$)**, no su área.
 
-- Ha alcanzado los objetivos
-- Se encuentra en proceso de alcanzar los objetivos
-- No ha alcanzado los objetivos
+![Esquema del Ensayo Rockwell](imagenes/image20.png)
 
-![](img/shot06.png)
-{.center}
+*   **Rockwell B (HRB):** Penetrador de bola de acero (materiales blandos).
+*   **Rockwell C (HRC):** Penetrador de cono de diamante de 120° (materiales duros).
 
-## Informe de evaluación individualizado
+**Pasos:**
+1. Precarga de 10 kp ($h_1$).
+2. Carga total ($h_2$).
+3. Vuelta a precarga ($h_3$).
+4. El valor de $e$ es la diferencia de profundidad: $e = \frac{h_3 - h_1}{0,002}$.
 
-Según la Instrucción de 23 de abril de 2020, de la Viceconsejería de Educación y Deporte, relativa a las medidas educativas a adoptar en el tercer trimestre del curso 2019/2020:
+Fórmulas de dureza:
+*   $HRC = 100 - e$
+*   $HRB = 130 - e$
 
->A la finalización del curso 2019/2020, se cumplimentará, en su caso, un informe de evaluación individualizado, incorporando las observaciones que se consideren relevantes en relación con las dificultades que se hubieran detectado como consecuencia de la suspensión de la actividad educativa presencial.
+# 3. Ensayo Charpy
+Es un ensayo de flexión por choque para calcular la **resiliencia**, que es la resistencia a la rotura por impacto brusco.
 
-El propio consejo orientador se considera dicho informe y para ello se ha añadido el apartado **Aprendizajes imprescindibles no adquiridos**, que también debemos cumplimentar:
+![Esquema del Ensayo Charpy (Péndulo)](imagenes/image9.png)
 
-![](img/aprendizajes_no_adq.png)
-{.center}
-
-Para ello podemos copiar y pegar del documento de **flexibilización de programaciones** que se entregó a jefatura aquéllos **contenidos no impartidos que dejamos para el próximo curso**. Los tutores pueden pedir al equipo educativo que le manden dicha información por email con el objetivo de facilitar su cumplimentación.
-
-
-# Consejo orientador en 2º de ESO
-
-**¡Ojo!**, los de FP Básica no pueden quedarse sin entregar bajo ningún motivo: deben llevarlos los alumnos al centro en el que se matriculan, y deben ir sellados.
-
-## Medidas complementarias
-
-Se rellenan **todos** los alumnos y se eligen las que procedan (puede quedarse en blanco para algunos alumnos).
-
-![](img/shot04.png)
-{.center style="width: 60%"}
-
-## Recomendaciones sobre el itinerario a seguir
-
-**Recomendaciones del itinerario a seguir para el próximo curso**, se selecciona entre:
-
-- 3º de ESO por la opción de enseñanzas aplicadas para la iniciación a la FP
-- 3º de ESO por la opción de enseñanzas académicas para la iniciación al bachillerato
-- FP Básica
-- Programa específico de FPB para alumnado NEE
-
-![](img/shot05.png)
-{.right style="width: 60%"}
-
-En **observaciones**, elegir entre:
-
-- Promociona a 3º de E.S.O.
-- Promociona a 3º de E.S.O. en P.M.A.R
-- Permanece un año más en 2º de no superar en la convocatoria de septiembre las materias pendientes.
-
-## Logro de objetivos
-
-Seleccionar una de las tres opciones:
-
-- Ha alcanzado los objetivos
-- Se encuentra en proceso de alcanzar los objetivos
-- No ha alcanzado los objetivos
-
-![](img/shot06.png)
-{.center}
-
-## Propuesta para FP Básica
-
-Si se ha seleccionado **Formación Profesional Básica** se despliegan otras pestañas:
-
-![](img/shot07b.png)
-{.center style="width: 60%"}
-
-- **Programa de refuerzo de asignaturas troncales**:
-    - 1º ESO - MATERIAS: Lengua, Matemáticas, Inglés.
-- **Programa de refuerzo para la recuperación de aprendizajes no adquiridos**. (Borrar las que no procedan)
-    - 1º ESO - MATERIAS: Lengua, Matemáticas, Inglés, Gª e Hª, Biol. y Geol., EPVA, Música, E.F., Rel/V.Et, Opt.
-    - 2º ESO - MATERIAS: Lengua, Matemáticas, Inglés, Gª e Hª, F. y Q., EPV, Música, E.F., Rel/V.Et, Tecnol, Opt.
-- **Planes específicos personalizados para el alumnado que no promociona**, copiar lo siguiente:
-
->Se han realizado actividades de seguimiento desde la Tutoría y el Departamento de Orientación
-
-
-![](img/shot07c.png)
-{.center}
-
-- **Información a la familia**: Sí
-- **Justificación de la propuesta**, copiar lo siguiente:
-
->Pese a las medidas educativas adoptadas el alumno/a no ha logrado adquirir las competencias claves, por lo que el Equipo docente valora como positiva su posible incorporación a la FP Básica, al entender que supondría un elemento motivador, evitando el riesgo de abandono temprano y facilitaría la continuidad en el sistema educativo.
-
-## Informe de evaluación individualizado
-
-Según la Instrucción de 23 de abril de 2020, de la Viceconsejería de Educación y Deporte, relativa a las medidas educativas a adoptar en el tercer trimestre del curso 2019/2020:
-
->A la finalización del curso 2019/2020, se cumplimentará, en su caso, un informe de evaluación individualizado, incorporando las observaciones que se consideren relevantes en relación con las dificultades que se hubieran detectado como consecuencia de la suspensión de la actividad educativa presencial.
-
-El propio consejo orientador se considera dicho informe y para ello se ha añadido el apartado **Aprendizajes imprescindibles no adquiridos**, que también debemos cumplimentar:
-
-![](img/aprendizajes_no_adq.png)
-{.center}
-
-Para ello podemos copiar y pegar del documento de **flexibilización de programaciones** que se entregó a jefatura aquéllos **contenidos no impartidos que dejamos para el próximo curso**. Los tutores pueden pedir al equipo educativo que le manden dicha información por email con el objetivo de facilitar su cumplimentación.
-
-
-
-# Consejo orientador en 3º de ESO
-
-**¡Ojo!**, los de FP Básica no pueden quedarse sin entregar bajo ningún motivo: deben llevarlos los alumnos al centro en el que se matriculan, y deben ir sellados.
-
-## Medidas complementarias
-
-Se rellenan **todos** los alumnos y se eligen las que procedan (puede quedarse en blanco para algunos alumnos).
-
-![](img/shot04.png)
-{.center style="width: 60%"}
-
-## Recomendaciones sobre el itinerario a seguir
-
-**Recomendaciones del itinerario a seguir para el próximo curso**, se selecciona entre:
-
-- 4º de ESO por la opción de enseñanzas aplicadas para la iniciación a la FP
-- 4º de ESO por la opción de enseñanzas académicas para la iniciación al bachillerato
-- FP Básica
-- Programa específico de FPB para alumnado NEE
-
-![](img/shot05.png)
-{.right style="width: 60%"}
-
-En **observaciones**, elegir entre:
-
-- Promociona a 4º de E.S.O.
-- Permanece un año más en 3º de no superar en la convocatoria de septiembre las materias pendientes.
-- Permanece un año más en 3º de E.S.O. en P.M.A.R.
-
-## Logro de objetivos
-
-Seleccionar una de las tres opciones:
-
-- Ha alcanzado los objetivos
-- Se encuentra en proceso de alcanzar los objetivos
-- No ha alcanzado los objetivos
-
-![](img/shot06.png)
-{.center}
-
-## Propuesta para FP Básica
-
-Si se ha seleccionado **Formación Profesional Básica** se despliegan otras pestañas:
-
-![](img/shot07b.png)
-{.center style="width: 60%"}
-
-- **Programa de refuerzo de asignaturas troncales**:
-    - 1º ESO - MATERIAS: Lengua, Matemáticas, Inglés.
-- **Programa de refuerzo para la recuperación de aprendizajes no adquiridos**. (Borrar las que no procedan)
-    - 1º ESO - MATERIAS: Lengua, Matemáticas, Inglés, Gª e Hª, Biol. y Geol., EPVA, Música, E.F., Rel/V.Et, Opt.
-    - 2º ESO - MATERIAS: Lengua, Matemáticas, Inglés, Gª e Hª, F. y Q., EPV, Música, E.F., Rel/V.Et, Tecnol, Opt.
-    - 3º ESO - MATERIAS: Lengua, Mat. Apl./Ac. Inglés, Gª e Hª, Biol. y Geol., F. y Q., E.F., Tecnol., Rel/V.Et, Ciudadanía, Opt.
-- **Planes específicos personalizados para el alumnado que no promociona**, copiar lo siguiente:
-
->Se han realizado actividades de seguimiento desde la Tutoría y el Departamento de Orientación
-
-
-![](img/shot07c.png)
-{.center}
-
-- **Información a la familia**: Sí
-- **Justificación de la propuesta**, copiar lo siguiente:
-
->Pese a las medidas educativas adoptadas el alumno/a no ha logrado adquirir las competencias claves, por lo que el Equipo docente valora como positiva su posible incorporación a la FP Básica, al entender que supondría un elemento motivador, evitando el riesgo de abandono temprano y facilitaría la continuidad en el sistema educativo.
-
-## Informe de evaluación individualizado
-
-Según la Instrucción de 23 de abril de 2020, de la Viceconsejería de Educación y Deporte, relativa a las medidas educativas a adoptar en el tercer trimestre del curso 2019/2020:
-
->A la finalización del curso 2019/2020, se cumplimentará, en su caso, un informe de evaluación individualizado, incorporando las observaciones que se consideren relevantes en relación con las dificultades que se hubieran detectado como consecuencia de la suspensión de la actividad educativa presencial.
-
-El propio consejo orientador se considera dicho informe y para ello se ha añadido el apartado **Aprendizajes imprescindibles no adquiridos**, que también debemos cumplimentar:
-
-![](img/aprendizajes_no_adq.png)
-{.center}
-
-Para ello podemos copiar y pegar del documento de **flexibilización de programaciones** que se entregó a jefatura aquéllos **contenidos no impartidos que dejamos para el próximo curso**. Los tutores pueden pedir al equipo educativo que le manden dicha información por email con el objetivo de facilitar su cumplimentación.
-
-
-
-# Consejo orientador en 4º de ESO
-
-**¡Ojo!**, los de FP Básica no pueden quedarse sin entregar bajo ningún motivo: deben llevarlos los alumnos al centro en el que se matriculan, y deben ir sellados.
-
-## Medidas complementarias
-
-Se rellenan **todos** los alumnos y se eligen las que procedan (puede quedarse en blanco para algunos alumnos).
-
-![](img/shot04.png)
-{.center style="width: 60%"}
-
-## Recomendaciones sobre el itinerario a seguir
-
-**Recomendaciones del itinerario a seguir para el próximo curso**, se selecciona entre:
-
-- Bachillerato
-- Ciclo formativo de grado medio
-- FP Básica
-- Programa específico de FPB para alumnado NEE .
-
-![](img/shot05.png)
-{.right style="width: 60%"}
-
-En **observaciones**, elegir entre:
-
-- Titula.
-- Permanece un año más en 4º de no superar en la convocatoria de septiembre las materias pendientes.
-- Finaliza sin título.
-
-## Logro de objetivos
-
-Seleccionar una de las tres opciones:
-
-- Ha alcanzado los objetivos
-- Se encuentra en proceso de alcanzar los objetivos
-- No ha alcanzado los objetivos
-
-![](img/shot06.png)
-{.center}
-
-## Informe de evaluación individualizado
-
-Según la Instrucción de 23 de abril de 2020, de la Viceconsejería de Educación y Deporte, relativa a las medidas educativas a adoptar en el tercer trimestre del curso 2019/2020:
-
->A la finalización del curso 2019/2020, se cumplimentará, en su caso, un informe de evaluación individualizado, incorporando las observaciones que se consideren relevantes en relación con las dificultades que se hubieran detectado como consecuencia de la suspensión de la actividad educativa presencial.
-
-El propio consejo orientador se considera dicho informe y para ello se ha añadido el apartado **Aprendizajes imprescindibles no adquiridos**, que también debemos cumplimentar:
-
-![](img/aprendizajes_no_adq.png)
-{.center}
-
-Para ello podemos copiar y pegar del documento de **flexibilización de programaciones** que se entregó a jefatura aquéllos **contenidos no impartidos que dejamos para el próximo curso**. Los tutores pueden pedir al equipo educativo que le manden dicha información por email con el objetivo de facilitar su cumplimentación.
-
-
+Consiste en golpear una probeta entallada con un péndulo que cae desde una altura $H$. La energía absorbida en el impacto ($W$) se calcula por la diferencia de alturas del péndulo:
+$$W = P \cdot (H - h)$$
+La resiliencia ($\rho$ o $K_{cu}$) es la energía por unidad de sección ($S$):
+$$\rho = \frac{W}{S}$$
