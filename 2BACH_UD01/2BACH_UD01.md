@@ -17,14 +17,21 @@ Tabla de contenidos
 
 Este ensayo mecánico consiste en someter a una probeta de forma y dimensiones normalizadas a un sistema de fuerzas exteriores (esfuerzo de tracción) en la dirección de su eje longitudinal hasta romperla.
 
+
 ## 1.1 Deformaciones elásticas y plásticas
 
 Cuando sometemos un material a una tensión, se deforma. Si al cesar la fuerza el material recupera sus dimensiones primitivas, se dice que ha experimentado una deformación elástica.
 
 Si el material se deforma hasta el extremo de no poder recuperar por completo sus medidas originales, se dice que ha experimentado una deformación plástica.
 
+![](./img/imagen_01.png)
+{.center style="width: 70%"}
+
 ## 1.2 Tensión y deformación
 Consideremos una varilla cilíndrica de longitud $L_0$ y una sección $A_0$, sometida a una tensión $F$ de tracción.
+
+![](./img/imagen_02.png)
+{.center style="width: 30%"}
 
 Definiremos **tensión ($\sigma$)** como el cociente entre la fuerza de tracción $F$ y la sección transversal $A_0$ de la varilla:
 $$\sigma = \frac{F}{A_0}$$
@@ -36,7 +43,8 @@ Cuando se aplica a una varilla una fuerza de tracción, se provoca un alargamien
 ## 1.3 Análisis de un diagrama de tracción
 Los resultados obtenidos en la realización de un ensayo de tracción se representan en una gráfica de tal manera que obtenemos una curva que relaciona las tensiones con las deformaciones relativas a la longitud inicial, llamadas alargamientos unitarios.
 
-![Diagrama de tracción](./imagenes/image28.png)
+![](./img/imagen_03.png)
+{.center style="width: 50%"}
 
 Al estudiar este diagrama, podemos distinguir dos zonas fundamentales:
 
@@ -48,6 +56,10 @@ Al estudiar este diagrama, podemos distinguir dos zonas fundamentales:
     *   **Zona de rotura (RS).** Superado el punto R, el material sigue alargándose progresivamente hasta que se produce la rotura física total en el punto S.
 
 **Fenómeno de fluencia:** En algunos materiales como el acero, existe una zona por encima del límite elástico donde se produce un alargamiento muy rápido sin que varíe la tensión aplicada. El punto donde comienza se llama **límite de fluencia (F)**.
+
+![](./img/imagen_04.png)
+{.center style="width: 50%"}
+
 
 ## 1.4 Ley de Hooke
 Las tensiones aplicadas sobre un elemento resistente son directamente proporcionales a las deformaciones producidas, dentro del comportamiento elástico de los materiales.
