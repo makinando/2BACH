@@ -1,0 +1,23 @@
+@import 'css/article/print.css';
+
+@page {
+    @top-left {
+        content: "Tecnología e Ingeniería II";
+	}
+    @top-right {
+        content: "UD 1 - Ensayos en materiales";
+	}
+
+    @bottom-center {
+        /*content: "Página " counter(page) " de " counter(pages);*/
+        content: counter(page);
+    }
+}
+
+
+
+code {
+	color: red;
+	background-color: #DDF;
+	border: 1px solid #F55;
+}
